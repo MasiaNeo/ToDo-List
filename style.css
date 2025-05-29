@@ -1,0 +1,130 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A more modern font */
+    margin: 0; /* Remove default body margin */
+    padding: 20px;
+    background-color: #f0f2f5; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top, not center vertically */
+    min-height: 100vh; /* Ensure body takes full viewport height */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+    max-width: 500px;
+    width: 100%; /* Make it responsive */
+    margin-top: 50px; /* Push it down a bit from the top */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 2em; /* Larger heading */
+    font-weight: 600; /* Slightly bolder */
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 20px; /* More space below input */
+    border: 1px solid #dcdcdc; /* Subtle border around the input group */
+    border-radius: 6px;
+    overflow: hidden; /* Ensures button border merges with input */
+}
+
+#newTask {
+    flex-grow: 1; /* Input takes up available space */
+    padding: 12px 15px; /* More padding */
+    border: none; /* Remove individual input border */
+    outline: none; /* Remove outline on focus */
+    font-size: 1.1em; /* Slightly larger text */
+    color: #555;
+}
+
+#newTask::placeholder {
+    color: #aaa;
+}
+
+#addTaskBtn {
+    padding: 12px 20px; /* More padding */
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0; /* Rounded only on right side */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: background-color 0.2s ease; /* Smooth transition on hover */
+}
+
+#addTaskBtn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+#taskList {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0; /* Remove default ul margin */
+}
+
+#taskList li {
+    padding: 12px 15px; /* Consistent padding */
+    border-bottom: 1px solid #ececec; /* Lighter separator */
+    display: flex; /* Use flexbox for internal alignment */
+    align-items: center; /* Vertically center content */
+    cursor: pointer; /* Indicate clickable */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+    min-height: 40px; /* Ensure a minimum height for consistency */
+}
+
+#taskList li:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+#taskList li:hover {
+    background-color: #f6f6f6; /* Subtle hover effect */
+}
+
+/* Styles for completed tasks (the "scratch-off" effect) */
+#taskList li.completed {
+    background-color: #e6ffe6; /* Light green background for completed tasks */
+    opacity: 0.8; /* Slightly fade completed tasks */
+}
+
+#taskList li.completed .task-text {
+    text-decoration: line-through; /* The strikethrough */
+    color: #777; /* Faded color for completed text */
+}
+
+#taskList li.completed .task-time {
+    color: #999; /* Faded color for time of completed tasks */
+}
+
+/* Styling for the content within each list item */
+#taskList li .task-content {
+    flex-grow: 1; /* Allows text and time to take available space */
+    display: flex; /* Flexbox for text and time alignment */
+    flex-wrap: wrap; /* Allow wrapping if text is too long */
+    align-items: baseline; /* Align text and time nicely */
+    justify-content: space-between; /* Push time to the right */
+}
+
+.task-text {
+    word-break: break-word; /* Allows long words to break and wrap */
+    flex-grow: 1; /* Allow text to take most space */
+    margin-right: 10px; /* Space before time */
+    font-size: 1em;
+    color: #444;
+}
+
+.task-time {
+    font-size: 0.75em; /* Smaller time font */
+    color: #888;
+    white-space: nowrap; /* Prevents time from wrapping */
+    min-width: 70px; /* Ensure time has enough space */
+    text-align: right;
+}
