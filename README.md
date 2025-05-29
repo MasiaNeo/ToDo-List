@@ -15,7 +15,7 @@ git clone https://github.com/MasiaNeo/ToDo-List.git
 
 Navigate to the Project Directory:
 cd ToDo-List
-https://github.com/MasiaNeo/ToDo-List/new/main?filename=README.md 
+https://github.com/MasiaNeo/ToDo-List/blob/main/index.html
 
 🛠️ Technologies Used
 HTML5: For the basic structure and content of the web page.
