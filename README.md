@@ -15,7 +15,11 @@ git clone https://github.com/MasiaNeo/ToDo-List.git
 
 Navigate to the Project Directory:
 cd ToDo-List
+HTML
 https://github.com/MasiaNeo/ToDo-List/blob/main/index.html
+
+Java Script
+https://github.com/MasiaNeo/ToDo-List/blob/main/script.js
 
 🛠️ Technologies Used
 HTML5: For the basic structure and content of the web page.
