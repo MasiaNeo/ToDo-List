@@ -24,9 +24,16 @@ JavaScript (ES6+): For all the interactive functionality, like adding, marking, 
 
 📂 Project Structure
 .
+
 ├── index.html
+
+
 ├── style.css
+
+
 └── script.js
+
+
 index.html: The main HTML file containing the structure of the To-Do list.
 style.css: Contains all the CSS rules for styling the application.
 script.js: Contains all the JavaScript code that powers the To-Do list's interactivity.
